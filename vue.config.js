@@ -2,7 +2,7 @@ const path = require('path')
 const CompressionWebpackPlugin = require('compression-webpack-plugin')
 const productionGzipExtensions = ['js', 'css']
 module.exports = {
-  publicPath: '/',
+  publicPath: '/iboot-vue3-ts-init',
   pages: {
     index: {
       entry: 'src/main.ts',
