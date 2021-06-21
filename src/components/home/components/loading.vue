@@ -1,7 +1,6 @@
 <template>
   <div class="iboot-tech-loading"></div>
 </template>
-
 <script lang="ts">
 import lottie from 'lottie-web'
 import { onMounted } from 'vue'
@@ -23,4 +22,16 @@ export default {
 }
 </script>
 
-<style lang="less"></style>
+<style lang="less">
+.iboot-tech-loading{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    width: 260px !important;
+    height: 260px !important;
+  }
+}
+</style>

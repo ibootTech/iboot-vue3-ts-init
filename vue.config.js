@@ -3,6 +3,12 @@ const CompressionWebpackPlugin = require('compression-webpack-plugin')
 const productionGzipExtensions = ['js', 'css']
 module.exports = {
   publicPath: '/',
+  pages: {
+    index: {
+      entry: 'src/main.ts',
+      template: 'public/index.html'
+    }
+  },
   devServer: {
     port: process.env.port || 8080,
     open: process.env.VUE_APP_AUTO_OPEN_BROWSER || false
