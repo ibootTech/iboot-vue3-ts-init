@@ -4,7 +4,7 @@ const productionGzipExtensions = ['js', 'css']
 module.exports = {
   publicPath: '/',
   devServer: {
-    port: process.env.port || 1993,
+    port: process.env.port || 8080,
     open: process.env.VUE_APP_AUTO_OPEN_BROWSER || false
   },
   css: {

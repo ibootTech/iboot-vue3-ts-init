@@ -1,6 +1,7 @@
 {
   "name": "iboot-vue3-ts-init",
   "version": "0.1.0",
+  "author": "ibootTech",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",

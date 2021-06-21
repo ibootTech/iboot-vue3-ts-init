@@ -1,22 +1,13 @@
 <template>
   <div>
-    <a-button type="primary">Primary</a-button>
-    <svg-icon icon-class="small"></svg-icon>
-    <div>{{ title }}</div>
-    <div>{{ AppInfo }}</div>
-    <div id="demo">
-      <button @click="show = !show">Toggle</button>
-
-      <transition name="fade">
-        <p v-if="show">hello</p>
-      </transition>
-    </div>
+    <Loading />
   </div>
 </template>
 <script lang="ts">
 import { Button } from 'ant-design-vue'
 import { ref, computed, onBeforeMount, onMounted, onBeforeUpdate, onUpdated, onBeforeUnmount, onUnmounted, onErrorCaptured, onRenderTracked, onRenderTriggered } from 'vue'
 import { useStore } from 'vuex'
+import Loading from '../components/loading.vue'
 export default {
   data(): any {
     return {
@@ -24,6 +15,7 @@ export default {
     }
   },
   components: {
+    Loading,
     [Button.name]: Button
   },
   mounted(): void {
@@ -40,8 +32,6 @@ export default {
     }
     onMounted(() => {
       setTitle()
-      /*store.dispatch(`Home/SET_APP_INFO`, '222')
-      console.log(store.getters['Home/AppInfo'])*/
       console.log('===onMounted===')
     })
     onUpdated(() => {
@@ -73,13 +63,4 @@ export default {
 }
 </script>
 <style lang="less">
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
 </style>
