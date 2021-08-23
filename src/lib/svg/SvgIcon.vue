@@ -1,3 +1,8 @@
+<!--
+ * @descripttion: 
+ * @author: luohong
+ * @Date: 2021-06-21
+-->
 <template>
   <svg :class="svgClass" aria-hidden="true" fill="currentColor">
     <use :xlink:href="iconName" />

@@ -4,7 +4,7 @@ import 'nprogress/nprogress.css'
 
 NProgress.configure({ showSpinner: false })
 
-const components = require.context('@/components', true, /\.ts$/)
+const components = require.context('@/app', true, /\.ts$/)
 
 let asyncRoutes = []
 

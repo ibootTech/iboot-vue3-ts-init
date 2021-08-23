@@ -1,3 +1,8 @@
+/*
+ * @descripttion: 
+ * @author: luohong
+ * @Date: 2021-06-21
+ */
 const path = require('path')
 const CompressionWebpackPlugin = require('compression-webpack-plugin')
 const productionGzipExtensions = ['js', 'css']
@@ -33,7 +38,7 @@ module.exports = {
     config.module
       .rule('svg-sprite-loader')
       .test(/\.svg$/)
-      .include.add(path.resolve(__dirname, 'src/components'))
+      .include.add(path.resolve(__dirname, 'src/app'))
       .end()
       .use('svg-sprite-loader')
       .loader('svg-sprite-loader')
