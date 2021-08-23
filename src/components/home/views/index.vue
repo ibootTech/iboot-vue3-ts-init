@@ -142,7 +142,7 @@ export default {
           font-weight: 900;
           cursor: pointer;
         }
-        span{
+        span {
           padding: 0 10px 0 20px;
         }
       }

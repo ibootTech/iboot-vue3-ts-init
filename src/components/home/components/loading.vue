@@ -1,3 +1,8 @@
+<!--
+ * @descripttion: 
+ * @author: luohong
+ * @Date: 2021-06-21
+-->
 <template>
   <div class="iboot-tech-loading"></div>
 </template>
@@ -23,7 +28,7 @@ export default {
 </script>
 
 <style lang="less">
-.iboot-tech-loading{
+.iboot-tech-loading {
   height: 100vh;
   width: 100%;
   display: flex;
